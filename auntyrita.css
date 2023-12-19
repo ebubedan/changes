@@ -12,6 +12,9 @@
     transition: 0.2s linear;
 }
 
+
+
+
 :root {
     --black: black;
     --white: white;
@@ -353,8 +356,6 @@ p {
 
 
 
-
-
 @media (width: 375px)  {
     .header {
         padding: 0.5rem;
@@ -460,4 +461,67 @@ p {
         background: cover;
     }
 
+
+
+}
+
+
+@media screen and (min-width: 771px) {
+    .for-mobile {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .header {
+        display: none;
+    }
+
+    .for-mobile {
+        font-size: 17px;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    .div a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+    }
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    input[type='checkbox']:checked + label {
+        color: yellow;
+    }
+
+    input[type='checkbox']:checked + label + nav {
+        display: block;
+    }
+
+    label {
+        color: white;
+    }
+
+    nav {
+        width: 20%;
+        color: white;
+        background-color: black;
+        text-align: center;
+        position: absolute;
+        top: 27px;
+        display: none;
+    }
+
+    nav a {
+        display: block;        
+    }
 }
