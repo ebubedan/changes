@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer" />
       <!-- Add these links in the head section of your HTML -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="mobile-view.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- close of font awesome link -->
@@ -33,6 +34,18 @@
         </nav>
     </header>
     <!-- header section ends here -->
+    <div class="for-mobile">
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle">&#9776;</label>
+        <nav>
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#portfolios" onclick="closeMenu()">Portfolio</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </nav>
+
+    </div>
     <!-- home section start -->
     <section class="home" id="home">
         <h1>delivering values,<span>professionalism and</span> competency.</h1>
